@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+
+	<!-- пользователь видит во вкладке браузера -->
+	<title>Моё резюме 2026год - основные сведения.</title>
+
+	<!-- используется поисковыми системами (Яндекс, Google)  -->
+	<meta name="description" content="Резюме frontend-разработка 2026год." />
+
+	<!-- параметры для адаптивности сайта -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- предзагрузка шрифтов -->
+	<link rel="preload" as="font" href="font/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous" />
+	<link rel="preload" as="font" href="font/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous" />
+
+	<link rel="icon" href="favicon.ico" />
+	<link rel="icon" href="favicons/icon.svg" type="image/svg+xml" />
+	<link rel="apple" href="favicons/180.png" />
+	<link rel="manifest" href="manifest.webmanifest" />
+
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body page__body--modifier-index">
+	<header class="main-header">
+		<div class="main-header__wrapper">
+			<div class="main-header__wrapper-logo">
+				<span class="visually-hidden">Логотип `Resume`.</span>
+				<a class="main-header__logo logo" href="index.html">
+					<picture>
+						<source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo/logo-img.svg" />
+						<source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo/logo-img.svg" />
+						<img class="logo__logo-img" src="images/logo/logo-img.svg" width="33" height="38" alt="Изображение заполненния резюме на листке А4 ." />
+					</picture>
+					<img class="logo__logo-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Надпись `Resume`." />
+				</a>
+			</div>
+			<nav class="main-header__main-nav main-nav main-nav--opened main-nav--closed main-nav--nojs">
+				<button class="main-nav__toggle" type="button">
+					<span class="visually-hidden">Открыть меню.</span>
+				</button>
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a class="site-list__navigation-link site-list__navigation-link--light" aria-current="page" href="#part1">Обо мне</a>
+					</li>
+					<li class="site-list__item">
+						<a class="site-list__navigation-link site-list__navigation-link--light" href="#part2">Образование</a>
+					</li>
+					<li class="site-list__item">
+						<a class="site-list__navigation-link site-list__navigation-link--light" href="#part3">Курсы</a>
+					</li>
+					<li class="site-list__item">
+						<a class="site-list__navigation-link site-list__navigation-link--light" href="#part4">Опыт работы</a>
+					</li>
+					<li class="site-list__item">
+						<a class="site-list__navigation-link site-list__navigation-link--light" href="#part5">Мои проекты</a>
+					</li>
+					<li class="site-list__item">
+						<a class="site-list__navigation-link site-list__navigation-link--light" href="#part6">Контактная информация</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main">
+		<h1 class="visually-hidden">Моё резюме.</h1>
+		<section class="main__additional-products additional-products" id="part1">
+			<div class="additional-products__wrapper">
+				<h2 class="additional-products__heading">Обо мне</h2>
+				<ul class="additional-products__list">
+					<li class="additional-products__item additional">
+						<p class="additional__title">Фамилия Имя:</p>
+						<span class="additional__list">Петрова Ирина</span>
+					</li>
+					<li class="additional-products__item additional">
+						<p class="additional__title">Желаемая должность:</p>
+						<span class="additional__list">FRONTEND-РАЗРАБОТЧИК</span>
+					</li>
+					<li class="additional-products__item additional">
+						<p class="additional__title">Возраст:</p>
+						<span class="additional__list">40 лет</span>
+					</li>
+				</ul>
+				<article class="additional-products__banner banner">
+					<p class="visually-hidden">Фото соискателя работы.</p>
+					<a class="banner__link-img" href="#">
+						<picture>
+							<source media="(min-width: 1440px)" width="245" height="290" type="image/webp" srcset="
+                    images/my-photo-desktop@1x.webp 1x,
+                    images/my-photo-desktop@2x.webp 2x
+                  " />
+							<source media="(min-width: 768px)" width="280" height="200" type="image/webp" srcset="
+                    images/my-photo-tablet@1x.webp 1x,
+                    images/my-photo-tablet@2x.webp 2x
+                  " />
+							<source type="image/webp" srcset="
+                    images/my-photo-mobile@1x.webp 1x,
+                    images/my-photo-mobile@2x.webp 2x
+                  " width="280" height="290" />
+							<source media="(min-width: 1440px)" width="245" height="290" type="image/png" srcset="
+                    images/my-photo-desktop@1x.png 1x,
+                    images/my-photo-desktop@2x.png 2x
+                  " />
+							<source media="(min-width: 768px)" width="280" height="200" type="image/png" srcset="
+                    images/my-photo-tablet@1x.png 1x,
+                    images/my-photo-tablet@2x.png 2x
+                  " />
+							<img class="banner__img product" loading="lazy" src="images/my-photo-mobile@1x.jpg" srcset="images/my-photo-mobile@2x.jpg 2x" width="280" height="290" alt="Mоё фото." />
+						</picture>
+					</a>
+				</article>
+			</div>
+		</section>
+
+		<section class="main__additional-products additional-products" id="part2">
+			<div class="additional-products__wrapper additional-products__wrapper--first" id="part2">
+				<h2 class="additional-products__heading">Образование</h2>
+
+				<ul class="additional-products__list additional-products__list--first">
+					<p class="visually-hidden">Первое высшее образование.</p>
+					<!-- в ul нет заголовков по семантике -->
+					<li class="additional-products__item additional">
+						<p class="additional__title">Уровень образования:</p>
+						<span class="additional__list">Магистр</span>
+					</li>
+					<li class="additional-products__item additional">
+						<p class="additional__title">Учебное заведение:</p>
+						<span class="additional__list">Самарский государственный аэрокосмический университет им.
+							академика С.П. Королева (национальный исследовательский
+							университет), Самара</span>
+					</li>
+					<li class="additional-products__item additional">
+						<p class="additional__title">Факультет:</p>
+						<span class="additional__list">Летательных аппартов</span>
+					</li>
+					<li class="additional-products__item additional">
+						<p class="additional__title">Специализация:</p>
+						<span class="additional__list">Механика. Прикладная математика.</span>
+					</li>
+					<li class="additional-products__item additional">
+						<p class="additional__title">Год окончания:</p>
+						<span class="additional__list">2010 год</span>
+					</li>
+				</ul>
+
+				<ul class="additional-products__list additional-products__list--second">
+					<p class="visually-hidden">Второе высшее образование.</p>
+					<li class="additional-products__item additional">
+						<p class="additional__title">Уровень образования:</p>
+						<span class="additional__list">Высшее</span>
+					</li>
+					<li class="additional-products__item additional">
+						<p class="additional__title">Учебное заведение:</p>
+						<span class="additional__list">Самарский государственный аэрокосмический университет им.
+							академика С.П. Королева (национальный исследовательский
+							университет), Самара</span>
+					</li>
+					<li class="additional-products__item additional">
+						<p class="additional__title">Факультет:</p>
+						<span class="additional__list">Экономики и управления</span>
+					</li>
+					<li class="additional-products__item additional">
+						<p class="additional__title">Специализация:</p>
+						<span class="additional__list">Экономист-математик</span>
+					</li>
+					<li class="additional-products__item additional">
+						<p class="additional__title">Год окончания:</p>
+						<span class="additional__list">2010 год</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="main__advantages advantages" id="part3">
+			<div class="advantages__wrapper">
+				<h2 class="advantages__heading">Курсы</h2>
+				<ul class="advantages__list">
+					<li class="advantages__item advantages__item--first chapter">
+						<div class="advantages__paragraph additional">
+							<dt class="additional__title">Название:</dt>
+							<dd class="additional__list">
+								JavaScript. Профессиональная разработка веб-интерфейсов
+							</dd>
+							<dt class="additional__title">Проводившая организация:</dt>
+							<dd class="additional__list">html academy</dd>
+							<dt class="additional__title">Специализация:</dt>
+							<dd class="additional__list">
+								JavaScript. Профессиональная разработка веб-интерфейсов
+							</dd>
+							<dt class="additional__title">Год окончания:</dt>
+							<dd class="additional__list">2026 год</dd>
+						</div>
+					</li>
+
+					<li class="advantages__item advantages__item--first chapter">
+						<div class="advantages__paragraph additional">
+							<dt class="additional__title">Название:</dt>
+							<dd class="additional__list">
+								HTML и CSS. Профессиональная вёрстка сайтов
+							</dd>
+							<dt class="additional__title">Проводившая организация:</dt>
+							<dd class="additional__list">html academy</dd>
+							<dt class="additional__title">Специализация:</dt>
+							<dd class="additional__list">
+								HTML и CSS. Профессиональная вёрстка сайтов
+							</dd>
+							<dt class="additional__title">Год окончания:</dt>
+							<dd class="additional__list">2025 год</dd>
+						</div>
+					</li>
+					<li class="advantages__item advantages__item--first chapter">
+						<div class="advantages__paragraph additional">
+							<dt class="additional__title">Название:</dt>
+							<dd class="additional__list">
+								HTML и CSS. Адаптивная вёрстка и автоматизация
+							</dd>
+							<dt class="additional__title">Проводившая организация:</dt>
+							<dd class="additional__list">html academy</dd>
+							<dt class="additional__title">Специализация:</dt>
+							<dd class="additional__list">
+								HTML и CSS. Адаптивная вёрстка и автоматизация
+							</dd>
+							<dt class="additional__title">Год окончания:</dt>
+							<dd class="additional__list">2025 год</dd>
+						</div>
+					</li>
+					<li class="advantages__item advantages__item--first chapter">
+						<div class="advantages__paragraph additional">
+							<dt class="additional__title">Название:</dt>
+							<dd class="additional__list">
+								Frontend программист
+							</dd>
+							<dt class="additional__title">Проводившая организация:</dt>
+							<dd class="additional__list">ООО "ГикБрейнс"</dd>
+							<dt class="additional__title">Специализация:</dt>
+							<dd class="additional__list">
+								Связь, информационные и коммуникационные технологии
+							</dd>
+							<dt class="additional__title">Год окончания:</dt>
+							<dd class="additional__list">2024 год</dd>
+						</div>
+					</li>
+					<li class="advantages__item advantages__item--first chapter">
+						<div class="advantages__paragraph additional">
+							<dt class="additional__title">Название:</dt>
+							<dd class="additional__list">
+								Web -программист: с нуля до первых проектов
+							</dd>
+							<dt class="additional__title">Проводившая организация:</dt>
+							<dd class="additional__list">Национальный исследовательский Томский государственный университет</dd>
+							<dt class="additional__title">Специализация:</dt>
+							<dd class="additional__list">
+								Web -программист: с нуля до первых проектов
+							</dd>
+							<dt class="additional__title">Год окончания:</dt>
+							<dd class="additional__list">2022 год</dd>
+						</div>
+					</li>
+					<li class="advantages__item advantages__item--first chapter">
+						<div class="advantages__paragraph additional">
+							<dt class="additional__title">Название:</dt>
+							<dd class="additional__list">
+								Специалист по организационному и документационному обеспечению управления организацией
+							</dd>
+							<dt class="additional__title">Проводившая организация:</dt>
+							<dd class="additional__list">ЧПОУ "Академия бизнеса"</dd>
+							<dt class="additional__title">Специализация:</dt>
+							<dd class="additional__list">
+								Специалист по организационному и документационному обеспечению управления организацией
+							</dd>
+							<dt class="additional__title">Год окончания:</dt>
+							<dd class="additional__list">2021 год</dd>
+						</div>
+					</li>
+					<li class="advantages__item advantages__item--first chapter">
+						<div class="advantages__paragraph additional">
+							<dt class="additional__title">Название:</dt>
+							<dd class="additional__list">
+								Бухгалтер 1С
+							</dd>
+							<dt class="additional__title">Проводившая организация:</dt>
+							<dd class="additional__list">ООО "Перспектива"</dd>
+							<dt class="additional__title">Специализация:</dt>
+							<dd class="additional__list">
+								Бухгалтер
+							</dd>
+							<dt class="additional__title">Год окончания:</dt>
+							<dd class="additional__list">2019 год</dd>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+
+	<footer class="main-footer">
+		<div class="main-footer__wrapper">
+			<h2 class="visually-hidden">Я в социальных сетях.</h2>
+			<div class="main-footer__logo-wrapper">
+				<a class="main-footer__logo logo logo--modifier" href="index.html">
+					<img class="logo__logo-text logo__logo-text--modifier" src="images/logo/logo-text.svg" width="128" height="24" alt="Надпись `Resume`." />
+				</a>
+			</div>
+			<ul class="main-footer__social social">
+				<li class="social__item">
+					<a class="social__social-link social__social-link-vk" href="https://vk.ru/ira09_01_2023">
+						<span class="visually-hidden">В контакте.</span>
+					</a>
+				</li>
+				<li class="social__item">
+					<a class="social__social-link social__social-link-telegram" href="https://t.me/IrinaFrontend">
+						<span class="visually-hidden">Телеграмм.</span>
+					</a>
+				</li>
+			</ul>
+			<div class="main-footer__logo-company-wrapper">
+				<a class="main-footer__logo-company logo-company" href="mailto:q-w-i-n-86@rambler.ru">
+					<p class="logo-company__text">q-w-i-n-86@rambler.ru.</p>
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
