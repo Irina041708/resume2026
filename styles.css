@@ -1080,7 +1080,6 @@ img {
 }
 
 .additional__title {
-  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -1089,11 +1088,14 @@ img {
   line-height: 16px;
   color: #222222;
   padding-top: 13px;
+	margin-top: 0;
   margin-bottom: 13px;
+	overflow-wrap: break-word;
+  hyphens:auto;
 }
 
 .additional__value {
-  margin: 0;
+	display: block;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1103,9 +1105,10 @@ img {
 
   font-size: 14px;
   line-height: 14px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  padding-top: 13px;
+  margin-bottom: 13px;
+	overflow-wrap: break-word;
+  hyphens:auto;
 }
 
 .additional__button {
@@ -1128,24 +1131,27 @@ img {
   }
 
   .additional__title {
-    overflow-wrap: normal;
-    grid-column: 1 / 2;
+		display: block;
     margin: 0;
-    padding: 0 10px;
+    padding: 10px;
+		margin-bottom: 13px;
     font-size: 20px;
     line-height: 20px;
     width: 40%;
     min-height: 25px;
+		overflow-wrap: break-word;
+ 		hyphens:auto;
   }
 
   .additional__value {
-    overflow-wrap: normal;
-    grid-column: 2 / 2;
+    overflow-wrap: break-word;
+    hyphens:auto;
     margin: 0;
     font-size: 15px;
     line-height: 20px;
     width: 60%;
-    padding: 0 10px;
+    padding: 10px;
+  	margin-bottom: 13px;
   }
 
   .additional:last-child::after {
@@ -1168,7 +1174,8 @@ img {
 
   .additional__title {
     padding: 20px;
-    overflow-wrap: normal;
+    overflow-wrap: break-word;
+    hyphens:auto;
     grid-column: 1 / 2;
     margin: 0;
     font-size: 30px;
@@ -1179,8 +1186,8 @@ img {
 
   .additional__value {
     padding: 20px;
-    overflow-wrap: normal; /* важно перенос слов в местах пробелов */
-    /* hyphens:auto;важно перенос строк по правилам языка */
+    overflow-wrap: break-word; /* важно перенос слов в местах пробелов */
+    hyphens:auto;
     grid-column: 2 / 2;
     margin: 0;
     font-size: 25px;
@@ -1467,11 +1474,14 @@ img {
   line-height: 16px;
   color: #222222;
   padding-top: 13px;
-  margin-bottom: 13px;
+  margin-bottom: 5px;
+	overflow-wrap: break-word;
+  hyphens:auto;
 }
 
 .originality__value {
-  margin: 0;
+  margin-left: 0;
+	padding-top: 5px;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1480,6 +1490,8 @@ img {
   color: #4c41e9c9;
   text-transform: uppercase;
   margin-bottom: 15px;
+	overflow-wrap: break-word;
+  hyphens:auto;
 }
 
 .originality__button {
@@ -1504,8 +1516,8 @@ img {
   .originality__title {
     padding: 10px 10px 0;
     margin-bottom: 10px;
-    overflow-wrap: normal;
-
+    overflow-wrap: break-word;
+    hyphens:auto;
     font-size: 20px;
     line-height: 20px;
     width: 100%;
@@ -1515,7 +1527,8 @@ img {
   .originality__value {
     padding: 10px 10px 0;
     margin-bottom: 10px;
-    overflow-wrap: normal;
+    overflow-wrap: break-word;
+    hyphens:auto;
     font-size: 15px;
     line-height: 20px;
     width: 100%;
@@ -1540,7 +1553,8 @@ img {
   .originality__title {
     padding: 20px 20px 0;
     margin-bottom: 10px;
-    overflow-wrap: normal;
+    overflow-wrap: break-word;
+    hyphens:auto;
     font-size: 30px;
     line-height: 30px;
     width: 100%;
@@ -1550,7 +1564,8 @@ img {
   .originality__value {
     padding: 20px 20px 0;
     margin-bottom: 10px;
-    overflow-wrap: normal;
+    overflow-wrap: break-word;
+    hyphens:auto;
     font-size: 25px;
     line-height: 29px;
     width: 100%;
