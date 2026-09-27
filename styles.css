@@ -81,6 +81,7 @@ img {
 
 .page__body {
   margin: 0;
+  background-color: black;
 }
 /* /page */
 
@@ -94,7 +95,7 @@ img {
   position: relative;
   padding: 13px 20px 0;
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 .main-header__wrapper--modifier-catalog::after {
@@ -138,12 +139,13 @@ img {
   }
 
   .main-header__wrapper {
-    padding: 25px 30px 0;
+    padding: 25px 30px;
     width: 768px;
-    margin: 0 auto 20px;
+    margin: 0 auto 40px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+		gap: 90px;
   }
 
   .main-header__wrapper--modifier-catalog::after {
@@ -174,9 +176,9 @@ img {
   }
 
   .main-header__wrapper {
-    padding: 55px 110px 0;
+    padding: 55px 110px;
     width: 1440px;
-    margin: 0 auto 30px;
+    margin: 0 auto 85px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -393,9 +395,9 @@ img {
     position: relative;
     justify-content: flex-start;
     flex-flow: row wrap;
-    width: 437px;
+    width: 444px;
     margin-top: 13px;
-    gap: 34px;
+    gap: 20px;
   }
 
   .main-nav--opened .site-list__item,
@@ -809,8 +811,7 @@ img {
 .candidate-info__wrapper,
 .candidate-education__wrapper {
   padding: 0 20px;
-  margin-bottom: 30px;
-  display: block;
+  margin: 0 auto 30px;
   list-style: none;
 }
 
@@ -819,7 +820,7 @@ img {
   padding: 20px;
   margin-top: 0;
   list-style: none;
-  background-color: #d9d9d96e;
+  background-color:#f2f2f2;
   margin-bottom: 20px;
 }
 
@@ -841,15 +842,12 @@ img {
 
   line-height: 24px;
   width: 160px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  padding-top: 25px;
+  padding: 10px;
   margin-bottom: 36px;
   background-color: #ffffff;
-  box-shadow:
+  /* box-shadow: классная фишка -оставь себе
     40px 0 0 0 #ffffff,
-    -20px 0 0 0 #ffffff;
+    -20px 0 0 0 #ffffff; */
   position: relative;
 }
 
@@ -858,7 +856,7 @@ img {
   content: "";
   display: block;
   position: absolute;
-  top: 36px;
+  top: 20px;
   right: 0;
   width: 100vw;
   height: 2px;
@@ -900,7 +898,7 @@ img {
     padding: 10px;
     margin-top: 0;
     margin-bottom: 0;
-    background-color: #eef2f7;
+    background-color:#f2f2f2;
   }
 
   .candidate-education__list--first {
@@ -934,17 +932,14 @@ img {
     line-height: 32px;
     width: 250px;
     min-height: 32px;
-    padding-top: 15px;
+    padding-top: 10px;
     margin-bottom: 30px;
     padding-left: 40px;
-    box-shadow:
-      0 0 0 0 #ffffff,
-      0 0 0 0 #ffffff;
   }
 
   .candidate-info__heading::before,
   .candidate-education__heading::before {
-    top: 35px;
+    top: 25px;
   }
 
   .candidate-info__img {
@@ -966,8 +961,7 @@ img {
   .candidate-info__wrapper,
   .candidate-education__wrapper {
     padding: 0 110px;
-    margin-top: 0;
-    margin-bottom: 56px;
+    margin: 0 auto 85px;
     column-gap: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -982,7 +976,6 @@ img {
     padding: 10px;
     margin-top: 0;
     margin-bottom: 0;
-    background-color: #eef2f7;
   }
 
   .candidate-education__list--first {
@@ -1014,11 +1007,10 @@ img {
     background: #ffffff;
     font-size: 60px;
     line-height: 60px;
-    width: 300px;
+    width: 400px;
     min-height: 40px;
-    padding-top: 45px;
-    padding-left: 40px;
-    margin-bottom: 75px;
+    padding: 40px;
+    margin-bottom: 45px;
     position: relative;
     box-shadow:
       0 0 0 0 #ffffff,
@@ -1088,14 +1080,14 @@ img {
   line-height: 16px;
   color: #222222;
   padding-top: 13px;
-	margin-top: 0;
+  margin-top: 0;
   margin-bottom: 13px;
-	overflow-wrap: break-word;
-  hyphens:auto;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .additional__value {
-	display: block;
+  display: block;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1107,8 +1099,8 @@ img {
   line-height: 14px;
   padding-top: 13px;
   margin-bottom: 13px;
-	overflow-wrap: break-word;
-  hyphens:auto;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .additional__button {
@@ -1131,27 +1123,27 @@ img {
   }
 
   .additional__title {
-		display: block;
+    display: block;
     margin: 0;
     padding: 10px;
-		margin-bottom: 13px;
+    margin-bottom: 13px;
     font-size: 20px;
     line-height: 20px;
     width: 40%;
     min-height: 25px;
-		overflow-wrap: break-word;
- 		hyphens:auto;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 
   .additional__value {
     overflow-wrap: break-word;
-    hyphens:auto;
+    hyphens: auto;
     margin: 0;
     font-size: 15px;
     line-height: 20px;
     width: 60%;
     padding: 10px;
-  	margin-bottom: 13px;
+    margin-bottom: 13px;
   }
 
   .additional:last-child::after {
@@ -1175,7 +1167,7 @@ img {
   .additional__title {
     padding: 20px;
     overflow-wrap: break-word;
-    hyphens:auto;
+    hyphens: auto;
     grid-column: 1 / 2;
     margin: 0;
     font-size: 30px;
@@ -1187,7 +1179,7 @@ img {
   .additional__value {
     padding: 20px;
     overflow-wrap: break-word; /* важно перенос слов в местах пробелов */
-    hyphens:auto;
+    hyphens: auto;
     grid-column: 2 / 2;
     margin: 0;
     font-size: 25px;
@@ -1202,15 +1194,10 @@ img {
 /* /additional */
 
 /* candidate-courses */
-.candidate-courses {
-  padding-top: 20px;
-  padding-bottom: 49px;
-}
-
 .candidate-courses__wrapper {
   width: 320px;
   padding: 0 20px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 .candidate-courses__heading {
@@ -1225,15 +1212,12 @@ img {
 
   line-height: 24px;
   width: 120px;
-  padding-left: 20px;
-  padding-right: 20px;
-
-  padding-top: 25px;
+  padding: 10px;
   margin-bottom: 36px;
   background-color: #ffffff;
-  box-shadow:
+  /* box-shadow:
     40px 0 0 0 #ffffff,
-    -20px 0 0 0 #ffffff;
+    -20px 0 0 0 #ffffff; */
   position: relative;
 }
 
@@ -1241,7 +1225,7 @@ img {
   content: "";
   display: block;
   position: absolute;
-  top: 36px;
+  top: 20px;
   right: 0;
   width: 100vw;
   height: 2px;
@@ -1266,6 +1250,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+	background-color:#f2f2f2;
 }
 
 .candidate-courses__paragraph {
@@ -1286,24 +1271,30 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 1439px) {
+  .candidate-courses {
+    padding-top: 0;
+  }
+
   .candidate-courses__wrapper {
     width: 768px;
     padding: 0 30px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
   }
 
   .candidate-courses__heading {
-    font-size: 40px;
-    line-height: 40px;
-    margin-bottom: 32px;
-    width: 140px;
+    font-size: 32px;
+    line-height: 32px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+    width: 250px;
   }
 
   .candidate-courses__heading::before {
     content: "";
     display: block;
     position: absolute;
-    top: 50px;
+    top: 25px;
     right: 0;
     width: 100vw;
     height: 3px;
@@ -1339,13 +1330,13 @@ img {
     font-style: normal;
     position: absolute;
     width: 100%;
-    font-size: 280px;
-    line-height: 280px;
-    color: #ffffff;
+    font-size: 50px;
+    line-height: 50px;
+    color: #f2f2f2;
     content: counter(chapter);
-    top: 0;
-    padding-left: 115px;
-    z-index: -1;
+    top: 10px;
+    padding-left: 30px;
+    z-index: 1;
   }
 
   .candidate-courses__paragraph {
@@ -1361,6 +1352,7 @@ img {
     height: 80px;
     mask-size: 30px 32px;
     top: 0;
+		background-image: none;
   }
 }
 
@@ -1368,13 +1360,9 @@ img {
   .candidate-courses__wrapper {
     width: 1440px;
     padding: 0 110px;
-    margin: 0 auto;
+    margin: 0 auto 85px;
   }
 
-  .candidate-courses {
-    padding-top: 71px;
-    padding-bottom: 40px;
-  }
 
   .candidate-courses__list {
     display: grid;
@@ -1402,22 +1390,34 @@ img {
     position: absolute;
     width: 112px;
     min-height: 150px;
-    font-size: 150px;
-    line-height: 150px;
+    font-size: 50px;
+    line-height: 50px;
     color: #f2f2f2;
     content: counter(chapter);
-    top: 0;
-    padding-left: 115px;
-    z-index: -1;
+    top: 45px;
+    padding-left: 25px;
+    z-index: 1;
   }
 
   .candidate-courses__heading {
-    width: 250px;
     font-size: 60px;
     line-height: 60px;
-    padding-top: 5px;
-    padding-left: 40px;
-    margin-bottom: 75px;
+    padding: 40px;
+    margin-bottom: 45px;
+    width: 400px;
+  }
+
+  .candidate-courses__heading::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100vw;
+    height: 3px;
+    background: #d9d9d9;
+    z-index: -1;
+    box-shadow: 100vw 0 0 0 #d9d9d9;
   }
 
   .candidate-courses__paragraph {
@@ -1437,6 +1437,7 @@ img {
     width: 80px;
     height: 80px;
     mask-size: 30px 32px;
+		background-image: none;
   }
 }
 
@@ -1475,13 +1476,13 @@ img {
   color: #222222;
   padding-top: 13px;
   margin-bottom: 5px;
-	overflow-wrap: break-word;
-  hyphens:auto;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .originality__value {
   margin-left: 0;
-	padding-top: 5px;
+  padding-top: 5px;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -1490,8 +1491,8 @@ img {
   color: #4c41e9c9;
   text-transform: uppercase;
   margin-bottom: 15px;
-	overflow-wrap: break-word;
-  hyphens:auto;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .originality__button {
@@ -1517,7 +1518,7 @@ img {
     padding: 10px 10px 0;
     margin-bottom: 10px;
     overflow-wrap: break-word;
-    hyphens:auto;
+    hyphens: auto;
     font-size: 20px;
     line-height: 20px;
     width: 100%;
@@ -1528,7 +1529,7 @@ img {
     padding: 10px 10px 0;
     margin-bottom: 10px;
     overflow-wrap: break-word;
-    hyphens:auto;
+    hyphens: auto;
     font-size: 15px;
     line-height: 20px;
     width: 100%;
@@ -1554,7 +1555,7 @@ img {
     padding: 20px 20px 0;
     margin-bottom: 10px;
     overflow-wrap: break-word;
-    hyphens:auto;
+    hyphens: auto;
     font-size: 30px;
     line-height: 30px;
     width: 100%;
@@ -1565,7 +1566,7 @@ img {
     padding: 20px 20px 0;
     margin-bottom: 10px;
     overflow-wrap: break-word;
-    hyphens:auto;
+    hyphens: auto;
     font-size: 25px;
     line-height: 29px;
     width: 100%;
