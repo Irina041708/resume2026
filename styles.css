@@ -1366,14 +1366,14 @@ img {
 
   .candidate-courses__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(394px, 1fr));
     grid-template-rows: auto;
     grid-auto-flow: row;
     gap: 18px;
   }
 
   .candidate-courses__item {
-    width: 350px;
+    width: 394px;
     min-height: 280px;
     padding: 0;
     counter-increment: chapter 1;
