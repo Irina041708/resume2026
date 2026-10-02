@@ -12,3 +12,16 @@ navToggle.addEventListener('click', () => {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+const themeSwitchers = document.querySelectorAll(".theme-change");
+
+themeSwitchers.forEach(switcher => {
+	switcher.addEventListener('click', function() {
+		applyTheme(this.dataset.theme);
+	});
+});
+
+function applyTheme(themeName) {
+	let themeUrl = `css/theme-${themeName}.css`;
+	document.querySelector('[title=theme]').setAttribute('href', themeUrl);
+}

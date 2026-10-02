@@ -22,11 +22,21 @@
 	<link rel="apple" href="favicons/180.png" />
 	<link rel="manifest" href="manifest.webmanifest" />
 
-	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<link rel="stylesheet" title="theme" type="text/css" href="css/theme-dark.css" />
+	<!-- <link rel="stylesheet" title="theme" type="text/css" href="css/theme-light.css" /> -->
+
 	<script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body page__body--modifier-index">
+<body class="page__body">
+
+	<button class="theme-button">
+		<span class="visually-hidden">Переключатель темы-светлая или тёмная.</span>
+		<img class="theme-change" data-theme="light" src="icons/theme-light.svg" width="40" height="40" alt="Картинка для показа светлой темы." />
+		<img class="theme-change" data-theme="dark" src="icons/theme-dark.svg" width="40" height="40" alt="Картинка для показа тёмной темы." />
+	</button>
+
 	<header class="main-header">
 		<div class="main-header__wrapper">
 			<div class="main-header__wrapper-logo">
@@ -183,101 +193,163 @@
 			<div class="candidate-courses__wrapper">
 				<h2 class="candidate-courses__heading">Курсы</h2>
 				<ul class="candidate-courses__list">
-					<li class="candidate-courses__item chapter">
-						<dl class="candidate-courses__paragraph originality">
-							<dt class="originality__title">Проводившая организация:</dt>
-							<dd class="originality__value">html academy</dd>
-							<dt class="originality__title">Специализация:</dt>
-							<dd class="originality__value">
-								JavaScript. Профессиональная разработка веб-интерфейсов
-							</dd>
-							<dt class="originality__title">Год окончания:</dt>
-							<dd class="originality__value">2026 год</dd>
-						</dl>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">html academy</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							JavaScript. Профессиональная разработка веб-интерфейсов
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2026 год</span>
 					</li>
-					<li class="candidate-courses__item chapter">
-						<dl class="candidate-courses__paragraph originality">
-							<dt class="originality__title">Проводившая организация:</dt>
-							<dd class="originality__value">html academy</dd>
-							<dt class="originality__title">Специализация:</dt>
-							<dd class="originality__value">
-								HTML и CSS. Профессиональная вёрстка сайтов
-							</dd>
-							<dt class="originality__title">Год окончания:</dt>
-							<dd class="originality__value">2025 год</dd>
-						</dl>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">html academy</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							HTML и CSS. Профессиональная вёрстка сайтов
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2025 год</span>
 					</li>
-					<li class="candidate-courses__item chapter">
-						<dl class="candidate-courses__paragraph originality">
-							<dt class="originality__title">Проводившая организация:</dt>
-							<dd class="originality__value">html academy</dd>
-							<dt class="originality__title">Специализация:</dt>
-							<dd class="originality__value">
-								HTML и CSS. Адаптивная вёрстка и автоматизация
-							</dd>
-							<dt class="originality__title">Год окончания:</dt>
-							<dd class="originality__value">2025 год</dd>
-						</dl>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">html academy</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							HTML и CSS. Адаптивная вёрстка и автоматизация
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2025 год</span>
 					</li>
-					<li class="candidate-courses__item chapter">
-						<dl class="candidate-courses__paragraph originality">
-							<dt class="originality__title">Проводившая организация:</dt>
-							<dd class="originality__value">ООО "ГикБрейнс"</dd>
-							<dt class="originality__title">Специализация:</dt>
-							<dd class="originality__value">
-								Frontend программист. Связь, информационные и коммуникационные технологии
-							</dd>
-							<dt class="originality__title">Год окончания:</dt>
-							<dd class="originality__value">2024 год</dd>
-						</dl>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">ООО "ГикБрейнс"</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							Frontend программист. Связь, информационные и коммуникационные технологии
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2024 год</span>
 					</li>
-					<li class="candidate-courses__item chapter">
-						<dl class="candidate-courses__paragraph originality">
-							<dt class="originality__title">Проводившая организация:</dt>
-							<dd class="originality__value">Национальный исследовательский Томский государственный университет</dd>
-							<dt class="originality__title">Специализация:</dt>
-							<dd class="originality__value">
-								Web -программист: с нуля до первых проектов
-							</dd>
-							<dt class="originality__title">Год окончания:</dt>
-							<dd class="originality__value">2022 год</dd>
-						</dl>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">Национальный исследовательский Томский государственный университет</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							Web -программист: с нуля до первых проектов
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2022 год</span>
 					</li>
-					<li class="candidate-courses__item chapter">
-						<dl class="candidate-courses__paragraph originality">
-							<dt class="originality__title">Проводившая организация:</dt>
-							<dd class="originality__value">ЧПОУ "Академия бизнеса"</dd>
-							<dt class="originality__title">Специализация:</dt>
-							<dd class="originality__value">
-								Специалист по организационному и документационному обеспечению управления организацией
-							</dd>
-							<dt class="originality__title">Год окончания:</dt>
-							<dd class="originality__value">2021 год</dd>
-						</dl>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">ЧПОУ "Академия бизнеса"</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">Специалист по организационному и документационному обеспечению управления организацией
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2021 год</span>
 					</li>
-					<li class="candidate-courses__item chapter">
-						<dl class="candidate-courses__paragraph originality">
-							<dt class="originality__title">Проводившая организация:</dt>
-							<dd class="originality__value">ООО "Перспектива"</dd>
-							<dt class="originality__title">Специализация:</dt>
-							<dd class="originality__value">
-								Бухгалтер 1C
-							</dd>
-							<dt class="originality__title">Год окончания:</dt>
-							<dd class="originality__value">2019 год</dd>
-						</dl>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">ООО "Перспектива"</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							Бухгалтер 1C
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2019 год</span>
 					</li>
 				</ul>
 			</div>
 		</section>
 	</main>
 
+	<section class="main__candidate-courses candidate-courses" id="part3">
+			<div class="candidate-courses__wrapper">
+				<h2 class="candidate-courses__heading">Мои проекты</h2>
+				<ul class="candidate-courses__list">
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">html academy</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							JavaScript. Профессиональная разработка веб-интерфейсов
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2026 год</span>
+					</li>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">html academy</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							HTML и CSS. Профессиональная вёрстка сайтов
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2025 год</span>
+					</li>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">html academy</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							HTML и CSS. Адаптивная вёрстка и автоматизация
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2025 год</span>
+					</li>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">ООО "ГикБрейнс"</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							Frontend программист. Связь, информационные и коммуникационные технологии
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2024 год</span>
+					</li>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">Национальный исследовательский Томский государственный университет</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							Web -программист: с нуля до первых проектов
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2022 год</span>
+					</li>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">ЧПОУ "Академия бизнеса"</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">Специалист по организационному и документационному обеспечению управления организацией
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2021 год</span>
+					</li>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">Проводившая организация:</p>
+						<span class="courses__value">ООО "Перспектива"</span>
+						<p class="courses__title">Специализация:</p>
+						<span class="courses__value">
+							Бухгалтер 1C
+						</span>
+						<p class="courses__title">Год окончания:</p>
+						<span class="courses__value">2019 год</span>
+					</li>
+				</ul>
+			</div>
+		</section>
+
 	<footer class="main-footer" id="part6">
 		<div class="main-footer__wrapper">
 			<h2 class="visually-hidden">Я в социальных сетях.</h2>
 			<div class="main-footer__logo-wrapper">
-				<a class="main-footer__logo logo logo--modifier" href="index.html">
-					<img class="logo__logo-text logo__logo-text--modifier" src="images/logo/logo-text.svg" width="128" height="24" alt="Надпись `Resume`." />
+				<a class="main-footer__logo logo" href="index.html">
+					<img class="logo__logo-text" src="images/logo/logo-text.svg" width="128" height="24" alt="Надпись `Resume`." />
 				</a>
 			</div>
 			<ul class="main-footer__social social">

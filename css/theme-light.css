@@ -1,0 +1,12 @@
+.page__body {
+  background-color: #ffffff;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.theme-change[data-theme= "light"] {
+	display: none;
+}
+
+.theme-change[data-theme= "dark"] {
+	display: block;
+}
