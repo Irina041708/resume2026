@@ -22,19 +22,16 @@
 	<link rel="apple" href="favicons/180.png" />
 	<link rel="manifest" href="manifest.webmanifest" />
 
-	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	<link rel="stylesheet" title="theme" type="text/css" href="css/theme-dark.css" />
-	<!-- <link rel="stylesheet" title="theme" type="text/css" href="css/theme-light.css" /> -->
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" title="theme" href="css/theme-dark.css" />
 
 	<script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="page__theme theme theme--dark theme--light theme--nojs">
 
-	<button class="theme-button">
+	<button class="theme__toggle" type="button">
 		<span class="visually-hidden">Переключатель темы-светлая или тёмная.</span>
-		<img class="theme-change" data-theme="light" src="icons/theme-light.svg" width="40" height="40" alt="Картинка для показа светлой темы." />
-		<img class="theme-change" data-theme="dark" src="icons/theme-dark.svg" width="40" height="40" alt="Картинка для показа тёмной темы." />
 	</button>
 
 	<header class="main-header">
@@ -267,82 +264,69 @@
 		</section>
 	</main>
 
-	<section class="main__candidate-courses candidate-courses" id="part3">
-			<div class="candidate-courses__wrapper">
-				<h2 class="candidate-courses__heading">Мои проекты</h2>
+	<section class="main__candidate-skils candidate-scils">
+		<h2 class="candidate-scils__heading">Мои навыки</h2>
+		<ul class="candidate-scils__list">
+			<li class="candidate-scils__item">
+				Работаю с макетами в Figma.
+			</li>
+			<li class="candidate-scils__item">
+				Создаю доступные и адаптивные интерфейсы на HTML, CSS, FlexBox, Grid.
+			</li>
+			<li class="candidate-scils__item">
+				Разрабатываю веб-приложения с помощью JavaScript.
+			</li>
+			<li class="candidate-scils__item">
+				Для выполнения JavaScript-кода использую среду <b>Node.js</b> и стандартный менеджер пакетов <b>npm</b> .
+			</li>
+			<li class="candidate-scils__item">
+				Работаю через Git.
+			</li>
+			<li class="candidate-scils__item">
+			</li>
+		</ul>
+	</section>
+
+	<!-- <section class="main__candidate-courses candidate-courses" id="part3">
+		<div class="candidate-courses__wrapper">
+			<h2 class="candidate-courses__heading">Мои проекты</h2>
+			<article class="projects">
 				<ul class="candidate-courses__list">
 					<li class="candidate-courses__item courses chapter">
-						<p class="courses__title">Проводившая организация:</p>
-						<span class="courses__value">html academy</span>
-						<p class="courses__title">Специализация:</p>
-						<span class="courses__value">
-							JavaScript. Профессиональная разработка веб-интерфейсов
-						</span>
-						<p class="courses__title">Год окончания:</p>
-						<span class="courses__value">2026 год</span>
+						<p class="courses__title">Адаптивный сайт с разными цветовыми темами</p>
 					</li>
 					<li class="candidate-courses__item courses chapter">
-						<p class="courses__title">Проводившая организация:</p>
-						<span class="courses__value">html academy</span>
-						<p class="courses__title">Специализация:</p>
-						<span class="courses__value">
-							HTML и CSS. Профессиональная вёрстка сайтов
-						</span>
-						<p class="courses__title">Год окончания:</p>
-						<span class="courses__value">2025 год</span>
+						<p class="courses__title">Приложение интернет магазина</p>
 					</li>
 					<li class="candidate-courses__item courses chapter">
-						<p class="courses__title">Проводившая организация:</p>
-						<span class="courses__value">html academy</span>
-						<p class="courses__title">Специализация:</p>
-						<span class="courses__value">
-							HTML и CSS. Адаптивная вёрстка и автоматизация
-						</span>
-						<p class="courses__title">Год окончания:</p>
-						<span class="courses__value">2025 год</span>
+						<p class="courses__title">Интерактивная страничка с подключением к серверу</p>
 					</li>
 					<li class="candidate-courses__item courses chapter">
-						<p class="courses__title">Проводившая организация:</p>
-						<span class="courses__value">ООО "ГикБрейнс"</span>
-						<p class="courses__title">Специализация:</p>
-						<span class="courses__value">
-							Frontend программист. Связь, информационные и коммуникационные технологии
-						</span>
-						<p class="courses__title">Год окончания:</p>
-						<span class="courses__value">2024 год</span>
-					</li>
-					<li class="candidate-courses__item courses chapter">
-						<p class="courses__title">Проводившая организация:</p>
-						<span class="courses__value">Национальный исследовательский Томский государственный университет</span>
-						<p class="courses__title">Специализация:</p>
-						<span class="courses__value">
-							Web -программист: с нуля до первых проектов
-						</span>
-						<p class="courses__title">Год окончания:</p>
-						<span class="courses__value">2022 год</span>
-					</li>
-					<li class="candidate-courses__item courses chapter">
-						<p class="courses__title">Проводившая организация:</p>
-						<span class="courses__value">ЧПОУ "Академия бизнеса"</span>
-						<p class="courses__title">Специализация:</p>
-						<span class="courses__value">Специалист по организационному и документационному обеспечению управления организацией
-						</span>
-						<p class="courses__title">Год окончания:</p>
-						<span class="courses__value">2021 год</span>
-					</li>
-					<li class="candidate-courses__item courses chapter">
-						<p class="courses__title">Проводившая организация:</p>
-						<span class="courses__value">ООО "Перспектива"</span>
-						<p class="courses__title">Специализация:</p>
-						<span class="courses__value">
-							Бухгалтер 1C
-						</span>
-						<p class="courses__title">Год окончания:</p>
-						<span class="courses__value">2019 год</span>
+						<p class="courses__title"></p>
 					</li>
 				</ul>
-			</div>
-		</section>
+			</article>
+			<article class="tools">
+				<ul class="candidate-courses__list">
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">HTML</p>
+					</li>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">CSS + SCSS</p>
+					</li>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">flex-box + grid</p>
+					</li>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">git</p>
+					</li>
+					<li class="candidate-courses__item courses chapter">
+						<p class="courses__title">JavaScript</p>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</section> -->
 
 	<footer class="main-footer" id="part6">
 		<div class="main-footer__wrapper">

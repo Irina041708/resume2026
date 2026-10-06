@@ -13,15 +13,27 @@ navToggle.addEventListener('click', () => {
   }
 });
 
-const themeSwitchers = document.querySelectorAll(".theme-change");
+const themePage = document.querySelector('.theme');
+const themeToggle = document.querySelector(".theme__toggle");
 
-themeSwitchers.forEach(switcher => {
-	switcher.addEventListener('click', function() {
-		applyTheme(this.dataset.theme);
-	});
+themeToggle.addEventListener('click', () => {
+	if(themePage.classList.contains('theme--light')) {
+		themePage.classList.remove('theme--light');
+		themePage.classList.add('theme--dark');
+	} else {
+		themePage.classList.remove('theme--dark');
+		themePage.classList.add('theme--light');
+	}
 });
 
-function applyTheme(themeName) {
-	let themeUrl = `css/theme-${themeName}.css`;
-	document.querySelector('[title=theme]').setAttribute('href', themeUrl);
-}
+
+// themeSwitchers.forEach(switcher => {
+// 	switcher.addEventListener('click', function() {
+// 		applyTheme(this.dataset.theme);
+// 	});
+// });
+
+// function applyTheme(themeName) {
+// 	let themeUrl = `css/theme-${themeName}.css`;
+// 	document.querySelector('[title=theme]').setAttribute('href', themeUrl);
+// }
