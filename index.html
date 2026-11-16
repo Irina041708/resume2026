@@ -5,10 +5,10 @@
 	<meta charset="UTF-8" />
 
 	<!-- пользователь видит во вкладке браузера -->
-	<title>Моё резюме 2026год - основные сведения.</title>
+	<title>Моё резюме - основные сведения.</title>
 
-	<!-- используется поисковыми системами (Яндекс, Google)  -->
-	<meta name="description" content="Резюме frontend-разработка 2026год." />
+	<!-- используется поисковыми системами (Яндекс, Google)  name="keywords"-->
+	<meta name="description" content="Резюме frontend-разработка. Найди меня в поисковике и я буду первой ссылкой на странице." />
 
 	<!-- параметры для адаптивности сайта -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -35,6 +35,7 @@
 	</button>
 
 	<header class="main-header">
+		<h1 class="visually-hidden">Моё резюме.</h1>
 		<div class="main-header__wrapper">
 			<div class="main-header__wrapper-logo">
 				<span class="visually-hidden">Логотип `Resume`.</span>
@@ -76,9 +77,8 @@
 	</header>
 
 	<main class="main">
-		<h1 class="visually-hidden">Моё резюме.</h1>
 		<section class="main__candidate-info candidate-info" id="part1">
-			<div class="candidate-info__wrapper">
+			<article class="candidate-info__wrapper">
 				<h2 class="candidate-info__heading">Обо мне</h2>
 				<ul class="candidate-info__list">
 					<li class="candidate-info__item additional">
@@ -126,7 +126,7 @@
 						</picture>
 					</a>
 				</div>
-			</div>
+			</article>
 		</section>
 
 		<section class="main__candidate-education candidate-education" id="part2">
@@ -319,6 +319,15 @@
 			</p>
 		</a>
 	</template>
+
+	<section class="skills-filters">
+		<form class="skills-filters__form" action="index.html" method="get" autocomplete="off">
+			<buttton type=button class="skills-filters__button skills-filters__button--active" id="filter-all">Все</buttton>
+			<buttton type=button class="skills-filters__button" id="filter_frontend">Frontend</buttton>
+			<buttton type=button class="skills-filters__button" id="filter-backend">Backend</buttton>
+			<buttton type=button class="skills-filters__button" id="filter-tools">Tools</buttton>
+		</form>
+	</section>
 
 	<footer class="main-footer" id="part6">
 		<div class="main-footer__wrapper">

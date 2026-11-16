@@ -757,6 +757,7 @@ img {
 
 /* candidate-info */
 .candidate-info__wrapper {
+	width: 375px;
   padding: 0 20px;
   margin: 0 auto 30px;
   /* list-style: none; */
@@ -820,6 +821,7 @@ img {
 
 @media (min-width: 768px) {
   .candidate-info__wrapper {
+		width: 768px;
     padding: 0 30px;
     margin-top: 0;
     margin-bottom: 50px;
@@ -878,6 +880,7 @@ img {
 
 @media (min-width: 1440px) {
   .candidate-info__wrapper {
+		width: 1440px;
     padding: 0 110px;
     margin: 0 auto 85px;
     column-gap: 30px;
@@ -925,6 +928,7 @@ img {
 
 /* candidate-education */
 .candidate-education__wrapper {
+	width: 375px;
   padding: 0 20px;
   margin: 0 auto 30px;
   /* list-style: none; */
@@ -978,6 +982,7 @@ img {
 
 @media (min-width: 768px) {
   .candidate-education__wrapper {
+		width: 768px;
     padding: 0 30px;
     margin-top: 0;
     margin-bottom: 50px;
@@ -1034,6 +1039,7 @@ img {
 
 @media (min-width: 1440px) {
   .candidate-education__wrapper {
+		width: 1440px;
     padding: 0 110px;
     margin: 0 auto 85px;
     column-gap: 30px;
